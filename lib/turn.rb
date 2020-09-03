@@ -55,7 +55,7 @@ def turn(board)
       if valid_move?(board, index)
         move(board, index, character = "X")
         update_board_at_with(board, index, character = "X")
-       return display_board(index)
+       return display_board(board)
       else
       turn(board)
       puts "Please enter 1-9:"
