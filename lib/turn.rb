@@ -53,7 +53,7 @@ def turn(board)
   user_input = gets.strip
   index = input_to_index(user_input)
       if valid_move?(board, index)
-       return update_board_at_with(board, index, character = "X")
+       return display_board(board)
       else
       turn(board)
       puts "Please enter 1-9:"
