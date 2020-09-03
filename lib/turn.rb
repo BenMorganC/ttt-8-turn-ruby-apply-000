@@ -54,6 +54,7 @@ def turn(board)
   index = input_to_index(user_input)
       if valid_move?(board, index)
         move(board, index, character = "X")
+        update_board_at_with(board, index, character = "X")
        return display_board(index)
       else
       turn(board)
